@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>FastAPI Calculator</title>
+        <title>Load and Testing</title>
         <style>
             body {
                 display: flex;
@@ -78,20 +78,30 @@
     </head>
     <body>
         <div class="card">
-            <h1>FastAPI Calculator</h1>
+            <h1>Load and Testing<br>FastAPI Calculator</h1>
             <form action="/calculate" method="post">
-                <input type="number" name="firstDigit" required placeholder="Enter first number">
+                <input type="number" name="firstDigit" required placeholder="Enter Number">
                 <div class="operation-buttons">
-                    <button type="button" class="operation-button" onclick="setOperation('+')">+</button>
-                    <button type="button" class="operation-button" onclick="setOperation('-')">-</button>
-                    <button type="button" class="operation-button" onclick="setOperation('*')">×</button>
-                    <button type="button" class="operation-button" onclick="setOperation('/')">÷</button>
+                    <button type="button" 
+                    class="operation-button" 
+                    onclick="setOperation('+')">+</button>
+                    <button type="button" 
+                    class="operation-button" 
+                    onclick="setOperation('-')">-</button>
+                    <button type="button" 
+                    class="operation-button" 
+                    onclick="setOperation('*')">×</button>
+                    <button type="button" 
+                    class="operation-button" 
+                    onclick="setOperation('/')">÷</button>
                 </div>
                 <input type="hidden" name="operation" id="operation" required>
-                <input type="number" name="secondDigit" required placeholder="Enter second number">
+                <input type="number" name="secondDigit" required placeholder="Enter Number">
                 <div class="action-buttons">
-                    <button type="submit" class="action-button">Calculate</button>
-                    <button type="button" class="action-button" onclick="clearResult()">Reset</button>
+                    <button type="submit" 
+                    class="action-button">Calculate</button>
+                    <button type="button" 
+                    class="action-button" onclick="clearResult()">Reset</button>
                 </div>
             </form>
             <div id="result" class="result">
