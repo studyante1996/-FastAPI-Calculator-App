@@ -78,7 +78,7 @@
     </head>
     <body>
         <div class="card">
-            <h1>Load and Testing<br>FastAPI Calculator</h1>
+            <h1>Load and Testing<br>[FastAPI] Calculator</h1>
             <form action="/calculate" method="post">
                 <input type="number" name="firstDigit" required placeholder="Enter Number">
                 <div class="operation-buttons">
